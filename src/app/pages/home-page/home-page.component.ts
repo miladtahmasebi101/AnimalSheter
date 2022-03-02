@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { InformationModel } from 'src/app/component/models/info.model';
 
 @Component({
   selector: 'app-home-page',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-
+@Input() info : InformationModel[] ;
   constructor() { }
 
   ngOnInit(): void {
