@@ -16,6 +16,7 @@ import { SliderComponent } from './component/slider/slider.component';
 import { TeamComponent } from './component/team/team.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { VideoComponent } from './component/video/video.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     PicturesComponent,
     ProductsComponent,
     SliderComponent,
-    TeamComponent
+    TeamComponent,
+    VideoComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
