@@ -17,6 +17,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { VideoComponent } from './component/video/video.component';
 import { HttpClientModule } from '@angular/common/http'
+import {CdkAccordionModule} from '@angular/cdk/accordion';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +41,7 @@ import { HttpClientModule } from '@angular/common/http'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    CdkAccordionModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [],
