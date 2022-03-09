@@ -11,5 +11,9 @@ export class TeamComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  getUrl()
+  {
+    return "url('https://pawfriends.qodeinteractive.com/wp-content/uploads/2019/08/h5-img-7.jpg')";
+  }
 
 }

@@ -1,0 +1,91 @@
+.team-name-text :hover {
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.team-link :hover {
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    color: red;
+    border-radius: 5px;
+    width: 120%;
+    align-items: center;
+    text-align: center;
+    height: 39px;
+    padding-top: 6px;
+}
+
+.team-link {
+    position: absolute;
+    top: 82%;
+    left: 36%;
+}
+
+.team-name-text {
+    background-color: red;
+    border-radius: 5px;
+    width: 120%;
+    align-items: center;
+    color: white;
+    text-align: center;
+    height: 39px;
+    padding-top: 6px;
+}
+
+.st-title {
+    width: 100%;
+}
+
+// .input-search {
+//     width: 50%;
+//     height: 70px;
+//     font-size: small;
+// }
+.input-search {
+    padding: 17px 29px 19px;
+    color: #98999c;
+    background-color: #fff;
+    position: relative;
+    margin: 0 0 20px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: inherit;
+    line-height: 25px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: border-color 0.2s ease-in-out;
+    -o-transition: border-color 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out;
+    width: 100%;
+}
+
+.st-all {
+    margin-top: 5%;
+}
+
+.submit-btn {
+    margin-left: 25px;
+    padding: 18px 73px;
+    color: #fff;
+    background-color: #f04336;
+    border: 1px solid transparent;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 14px 36px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    font-family: Nunito, sans-serif;
+    line-height: 1.2em;
+    font-weight: 700;
+}
