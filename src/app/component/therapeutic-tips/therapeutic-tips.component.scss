@@ -1,0 +1,170 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Nunito, sans-serif;
+    font-weight: 900;
+    margin: 25px 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+a,
+h3,
+h4,
+h5,
+h6,
+p {
+    background: 0 0;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+h1,
+h2,
+h3,
+p a {
+    color: #424242;
+}
+
+h3,
+h4 {
+    line-height: 1.2em;
+}
+
+.textTh {
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin-inline-start: 10%;
+    margin-top: 2rem;
+}
+
+a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+p a:hover {
+    color: #f04336;
+}
+
+user agent stylesheet a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+::selection {
+    background: #f04336;
+    color: #fff;
+}
+
+.btn.btn-solid .btn-text {
+    z-index: 5;
+    position: relative;
+}
+
+.btn.btn-solid {
+    color: #fff;
+    background-color: #f04336;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+.btn,
+.reviews-per-criteria .item-reviews-rating-icon {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+a,
+p a {
+    text-decoration: none;
+    -webkit-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+}
+
+user agent stylesheet a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+.elements-holder .eh-item.horizontal-alignment-center {
+    text-align: center;
+}
+
+.vc_row.vc_row-flex>.vc_column_container>.vc_column-inner {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.content-aligment-center {
+    text-align: center;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #8f9093;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden !important;
+}
+
+.btn.btn-solid svg.paws {
+    width: 425px;
+    height: 140px;
+    position: absolute;
+    bottom: -41px;
+    right: -272px;
+}
+
+user agent stylesheet svg:not(:root) {
+    overflow: hidden;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    font-family: Nunito, sans-serif;
+    line-height: 1.2em;
+    font-weight: 700;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-position 0.3s, -webkit-transform 0.3s cubic-bezier(0.19, 0.54, 0.25, 1);
+    -o-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.3s cubic-bezier(0.19, 0.54, 0.25, 1), background-position 0.3s;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.3s cubic-bezier(0.19, 0.54, 0.25, 1), background-position 0.3s;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.3s cubic-bezier(0.19, 0.54, 0.25, 1), background-position 0.3s, -webkit-transform 0.3s cubic-bezier(0.19, 0.54, 0.25, 1);
+    border-radius: 4px;
+    padding: 14px 36px;
+    cursor: pointer;
+}

@@ -18,6 +18,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { VideoComponent } from './component/video/video.component';
 import { HttpClientModule } from '@angular/common/http'
 import {CdkAccordionModule} from '@angular/cdk/accordion';
+import { TherapeuticTipsComponent } from './component/therapeutic-tips/therapeutic-tips.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
     ProductsComponent,
     SliderComponent,
     TeamComponent,
-    VideoComponent
+    VideoComponent,
+    TherapeuticTipsComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
