@@ -17,3 +17,56 @@
     height: 30px;
     margin-inline-start: 20px;
 }
+
+.sliderfront {
+    position: absolute;
+    top: 40px;
+    z-index: 10;
+    border-bottom: 1px solid rgb(240, 234, 234);
+}
+
+.menuslider {
+    margin-inline-start: 30px;
+}
+
+.menu a {
+    margin-inline-end: 20px;
+    color: white;
+    font-size: x-large;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: black;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.icon-style2 {
+    font-size: 32px;
+    margin-inline-start: 16px;
+    color: white;
+}
+
+.search {
+    margin-top: 20px;
+    color: white;
+}
+
+.search a {
+    margin-inline-end: 20px;
+    color: white;
+    font-size: x-large;
+}
+
+.iconHeart {
+    bottom: 2px;
+    display: inline-block;
+    position: relative;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    margin-inline-start: 20px;
+}
