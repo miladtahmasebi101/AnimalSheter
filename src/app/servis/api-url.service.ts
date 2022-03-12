@@ -24,5 +24,12 @@ export class ApiUrlService {
         `${environment.apiUrl}faqs`
       )
       ;
-  }
+    }
+    getPortfolioItem() {
+      return this.http
+        .get<any>(
+          `${environment.apiUrl}portfolio-items`
+        )
+        ;
+    }
 }

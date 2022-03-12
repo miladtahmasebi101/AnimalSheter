@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http'
 import {CdkAccordionModule} from '@angular/cdk/accordion';
 import { TherapeuticTipsComponent } from './component/therapeutic-tips/therapeutic-tips.component';
 import { FaqComponent } from './component/faq/faq.component';
+import { BigSliderComponent } from './component/big-slider/big-slider.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { FaqComponent } from './component/faq/faq.component';
     TeamComponent,
     VideoComponent,
     TherapeuticTipsComponent,
-    FaqComponent
+    FaqComponent,
+    BigSliderComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

@@ -28,7 +28,6 @@ export class FaqComponent implements OnInit {
 
     this.apiurl.getFaq().subscribe((arg: any) => {
       this.faq = arg.data;
-      console.log("inooooo222", this.faq)
     }, (err) => {
       console.log(err);
 
