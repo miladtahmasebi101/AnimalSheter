@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { InformationModel } from 'src/app/component/models/info.model';
+import { InformationModel } from 'src/app/model/info.model';
 
 @Component({
   selector: 'app-home-page',

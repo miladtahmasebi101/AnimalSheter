@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { InformationModel } from '../models/info.model';
+import { InformationModel } from '../../model/info.model';
 
 @Component({
   selector: 'app-blog-post',

@@ -1,9 +1,12 @@
 .sliderfront {
     position: absolute;
-    top: 30px;
+    top: 40px;
     z-index: 1;
+    border-bottom: 1px solid rgb(240, 234, 234);
+}
+
+.menuslider {
     margin-inline-start: 30px;
-    border-bottom: 1px solid black;
 }
 
 .menu a {

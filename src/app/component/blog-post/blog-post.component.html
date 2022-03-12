@@ -1,25 +1,26 @@
-<div class="row">
+<div class="">
     <div class="text-center col-12 mt-5">
         <h2>Read the latest blog posts</h2>
         <p style="font-size: 19px; line-height: 32px">
             Lorem ipsum dolor sit amet, est vide voluptaria ex, nec in hinc solum sat. Neceessitatibus sonet soluta, vim eu esse accusamus
         </p>
     </div>
+
     <div class="row mt-5 ml-5">
 
         <ul class="col-12 row">
             <li class="col-4" *ngFor="let item of info">
                 <div class="">
                     <div class="">
-                        <a href={{item.hrefimg}} title={{item.titleimg}}>
-                            <img width="400px" height="auto" src={{item.scrimg}} class="" alt="a" loading="lazy" />
+                        <a href="{{ item.hrefimg }}" title="{{ item.titleimg }}">
+                            <img width="400px" height="auto" src="{{item.srcimg}}" class="" alt="a" loading="lazy" />
                         </a>
                     </div>
                     <div class="">
                         <div class="">
                             <div class="">
-                                <a href={{item.datehref}}>
-                                    <span class="">{{item.date}}</span>
+                                <a href="{{ item.datehref }}">
+                                    <span class="">{{ item.date }}</span>
                                 </a>
                             </div>
                         </div>
