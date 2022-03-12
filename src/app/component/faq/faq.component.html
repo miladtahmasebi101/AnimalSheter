@@ -1,0 +1,149 @@
+<app-header></app-header>
+<div>
+    <div class="mkdf-title-image">
+        <img width="100%" height="545px" itemprop="image" src="https://pawfriends.qodeinteractive.com/wp-content/uploads/2019/08/p3-title-img.jpg" alt="a" />
+    </div>
+    <div class="faqtxt">
+        <h3 style="color: white;">FAQ Page</h3>
+    </div>
+    <div class="homefaqtxt">
+        <h3 style="color: white;">
+            <a itemprop="url" href="https://pawfriends.qodeinteractive.com/">Home</a
+      ><span class="">&nbsp;/&nbsp;</span><span class="">FAQ Page</span>
+    </h3> </div>
+</div>
+<div class="row mt-5">
+  <div class="col-6">
+    <cdk-accordion class="example-accordion">
+      <cdk-accordion-item
+        *ngFor="let item of faq; let index = index"
+        #accordionItem="cdkAccordionItem"
+        class="example-accordion-item"
+        role="button"
+        tabindex="0"
+        [attr.id]="'accordion-header-' + index"
+        [attr.aria-expanded]="accordionItem.expanded"
+        [attr.aria-controls]="'accordion-body-' + index"
+      >
+        <div
+          class="example-accordion-item-header"
+          (click)="accordionItem.toggle()"
+        >
+          <h5>Question {{ item.attributes.Row }}</h5>
+          <span class="example-accordion-item-description">
+            <!-- {{ accordionItem.expanded ?
+            <i class="fa fa-minus" style="font-size: 18px; color: red"></i> :
+            <i class="fas fa-plus" style="font-size: 18px; color: red"></i> }} -->
+            {{ accordionItem.expanded ? "close" : "open" }}
+          </span>
+        </div>
+        <div
+          class="example-accordion-item-body"
+          role="region"
+          [style.display]="accordionItem.expanded ? '' : 'none'"
+          [attr.id]="'accordion-body-' + index"
+          [attr.aria-labelledby]="'accordion-header-' + index"
+        >
+          {{ item.attributes.Content }}
+        </div>
+      </cdk-accordion-item>
+    </cdk-accordion>
+    <!-- <div class="col-10 row qbox">
+
+            <h5 class="col-10"> Question {{ item.attributes.Row }}</h5>
+
+            <div class="col-2">
+                <i class="fas fa-plus" (click)="openquestion()"></i>
+            </div>
+        </div>
+        <div class="col-10">
+            {{item.attributes.Content}}
+        </div> -->
+  </div>
+  <div class="col-6 row">
+    <div class=" ">
+      <div class=" ">
+        <div class="">
+          <h4>Working for the community</h4>
+        </div>
+      </div>
+      <div class="">
+        <div class="">
+          <p>
+            Saperet blandit duo id, oblique adversarium neglegentur cum eu. Pro
+            ex mazim constituam, cu sea nostro quaestio eloquentiam, debitis
+            appareat constituto ne eum. Tacimates laboramus eloquentiam pro
+            ut.Saperet blandit duo id, oblique adversarium neglegentur cum eu.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <i
+          class="fa fa-check"
+          style="font-size: 18px; color: red; padding-top: 5px"
+        ></i>
+        <p class="" style="padding-left: 28px">Lorem ipsum dolor sit amet</p>
+      </div>
+      <div class="row">
+        <div class="">
+          <i
+            class="fa fa-check"
+            style="font-size: 18px; color: red; padding-top: 5px"
+          ></i>
+        </div>
+        <p class="" style="padding-left: 28px">Odio atqui populo cum ei</p>
+      </div>
+      <div class="row">
+        <div class="">
+          <i
+            class="fa fa-check"
+            style="font-size: 18px; color: red; padding-top: 5px"
+          ></i>
+        </div>
+        <p class="" style="padding-left: 28px">Lorem ipsum dolor sit amet</p>
+      </div>
+      <div class="row">
+        <div class="">
+          <i
+            class="fa fa-check"
+            style="font-size: 18px; color: red; padding-top: 5px"
+          ></i>
+        </div>
+        <p class="" style="padding-left: 28px">
+          Brute illud instructior sed ut
+        </p>
+      </div>
+      <div class="" style="height: 5px">
+        <span class=""></span>
+      </div>
+      <div class="">
+        <div class="">
+          <h4>Call center available 24 / 7</h4>
+        </div>
+      </div>
+      <div class="">
+        <div class="">
+          <p>
+            Cu sea lorem dissentiunt. No scripta inciderint liberavisse mel, ad
+            vix vide homero. Pro at sumo patrioque. In sit purto solum
+            deterruisset. Altera deleniti assueverit mel te, eum fugit ubique
+            ad.
+          </p>
+        </div>
+      </div>
+      <div class=" ">
+        <div class="">
+          <h4>
+            <a href="tel:381123456789"
+              ><span style="color: #f04336">+381 123 – 456 – 789</span>
+            </a>
+            </h4>
+    </div>
+</div>
+<div class="" style="height: 20px">
+    <span class=""></span>
+</div>
+</div>
+</div>
+</div>
+<app-footer></app-footer>
