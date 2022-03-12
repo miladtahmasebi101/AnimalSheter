@@ -25,3 +25,18 @@ ul {
 .menu-item2 {
     margin-top: 10px;
 }
+
+ol,
+ul {
+    list-style-position: inside;
+}
+
+.imge ul li img {
+    width: 70px;
+}
+
+.imge ul li {
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+}
