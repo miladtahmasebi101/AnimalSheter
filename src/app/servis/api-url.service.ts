@@ -32,4 +32,11 @@ export class ApiUrlService {
         )
         ;
     }
-}
+    getBigGalleryItem() {
+      return this.http
+        .get<any>(
+          `${environment.apiUrl}big-galleries`
+        )
+        ;
+    }
+  }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BigGalleryComponent } from './big-gallery/big-gallery.component';
 import { BigSliderComponent } from './component/big-slider/big-slider.component';
 import { FaqComponent } from './component/faq/faq.component';
 import { SearchComponent } from './component/search/search.component';
@@ -10,6 +11,7 @@ const routes: Routes = [
   {path:'' ,  component: SearchComponent},
   {path:'faq-page' ,  component: FaqComponent},
   {path:'big-slider' ,  component: BigSliderComponent},
+  {path:'big-gallery' ,  component: BigGalleryComponent},
 ];
 
 @NgModule({
