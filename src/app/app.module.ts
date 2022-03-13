@@ -21,7 +21,8 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
 import { TherapeuticTipsComponent } from './component/therapeutic-tips/therapeutic-tips.component';
 import { FaqComponent } from './component/faq/faq.component';
 import { BigSliderComponent } from './component/big-slider/big-slider.component';
-import { BigGalleryComponent } from './big-gallery/big-gallery.component';
+import { BigGalleryComponent } from './component/big-gallery/big-gallery.component';
+import { AboutUsComponent } from './component/about-us/about-us.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,8 @@ import { BigGalleryComponent } from './big-gallery/big-gallery.component';
     TherapeuticTipsComponent,
     FaqComponent,
     BigSliderComponent,
-    BigGalleryComponent
+    BigGalleryComponent,
+    AboutUsComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

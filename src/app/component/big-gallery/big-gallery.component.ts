@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IbigGallery } from '../model/bigGallery-model';
-import { ApiUrlService } from '../servis/api-url.service';
+import { IbigGallery } from '../../model/bigGallery-model';
+import { ApiUrlService } from '../../servis/api-url.service';
 
 @Component({
   selector: 'app-big-gallery',
