@@ -1,15 +1,15 @@
 <div class="row">
     <div class="slider col-12">
         <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
-            <mdb-carousel-item>
-                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).webp" alt="First slide" />
+            <mdb-carousel-item *ngFor="let carousel of items">
+                <img class="d-block w-100" [src]="carousel.src" alt="First slide" />
             </mdb-carousel-item>
-            <mdb-carousel-item>
+            <!-- <mdb-carousel-item>
                 <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).webp" alt="Second slide" />
             </mdb-carousel-item>
             <mdb-carousel-item>
                 <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).webp" alt="Third slide" />
-            </mdb-carousel-item>
+            </mdb-carousel-item> -->
         </mdb-carousel>
     </div>
 
@@ -21,33 +21,5 @@
             </rs-layer>
         </h4>
     </div>
-    <div class="row col-12 topic mce-i-aligncenter">
-        <div class="col-2"></div>
-        <div class="row col-10 topic-icon ">
-            <div class="">
-                <a class="" href="#" target="_self">
-                    <img itemprop="image" class="" src="https://pawfriends.qodeinteractive.com/wp-content/uploads/2019/08/client-1-white.png" alt="a">
-                </a>
-            </div>
-            <div class="">
-                <a class="" href="#" target="_self">
-                    <img itemprop="image" class="" src="https://pawfriends.qodeinteractive.com/wp-content/uploads/2019/08/client-2-white.png" alt="a">
-                </a>
-            </div>
-            <div class="">
-                <a class="" href="#" target="_self">
-                    <img itemprop="image" class="" src="https://pawfriends.qodeinteractive.com/wp-content/uploads/2019/08/client-4-white.png" alt="a">
-                </a>
-            </div>
-            <div class="">
-                <a class="" href="#" target="_self">
-                    <img itemprop="image" class="" src="https://pawfriends.qodeinteractive.com/wp-content/uploads/2019/08/client-5-white.png" alt="a">
-                </a>
-            </div>
-        </div>
-        <div class="col-1"></div>
-
-
-
-    </div>
+  
 </div>

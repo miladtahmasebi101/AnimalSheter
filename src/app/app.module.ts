@@ -17,12 +17,13 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { VideoComponent } from './component/video/video.component';
 import { HttpClientModule } from '@angular/common/http'
-import {CdkAccordionModule} from '@angular/cdk/accordion';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { TherapeuticTipsComponent } from './component/therapeutic-tips/therapeutic-tips.component';
-import { FaqComponent } from './component/faq/faq.component';
-import { BigSliderComponent } from './component/big-slider/big-slider.component';
-import { BigGalleryComponent } from './component/big-gallery/big-gallery.component';
-import { AboutUsComponent } from './component/about-us/about-us.component';
+import { FaqComponent } from './pages/faq/faq.component';
+import { BigSliderComponent } from './pages/big-slider/big-slider.component';
+import { BigGalleryComponent } from './pages/big-gallery/big-gallery.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { LogoComponent } from './component/logo/logo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +43,8 @@ import { AboutUsComponent } from './component/about-us/about-us.component';
     FaqComponent,
     BigSliderComponent,
     BigGalleryComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    LogoComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

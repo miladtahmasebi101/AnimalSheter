@@ -1,0 +1,133 @@
+<app-header></app-header>
+<div class="row">
+    <div>
+        <div class="">
+            <img itemprop="image" width="100%" src="https://pawfriends.qodeinteractive.com/wp-content/uploads/2019/07/port-title-img.jpg" alt="x" />
+        </div>
+
+        <div>
+            <h3 class="title-txt" style="color: #ffffff">Big Gallery</h3>
+        </div>
+        <div class="home-txt">
+            <div itemprop="breadcrumb" class="" style="color: #ffffff">
+                <h4 style="color: #ffffff">
+                    <a style="color: #ffffff" itemprop="url" href="">Home</a
+          ><span class="mkdf-delimiter">&nbsp;/&nbsp;</span
+          ><a
+            style="color: white"
+            itemprop="url"
+            href="https://pawfriends.qodeinteractive.com/portfolio-category/tips/"
+            >Tips</a
+          ><span>&nbsp;/&nbsp;</span><span style="color: red">Big Gallery</span>
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 row">
+            <div class="col-4 " *ngFor="let item of bigGallery">
+                <img class="img-gallery" src="{{item.attributes.imgUrl}}" width="100%" height="auto" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+      <div class="col-9">
+        <div class="wpb_text_column wpb_content_element">
+          <div class="wpb_wrapper">
+            <h3>Project title</h3>
+          </div>
+        </div>
+        <div class="vc_empty_space" style="height: 10px">
+          <span class="vc_empty_space_inner"></span>
+        </div>
+        <div class="wpb_text_column wpb_content_element">
+          <div class="wpb_wrapper">
+            <p>
+              Fames ac turpis egestas integer eget aliquet nibh praesent
+              tristique. Mi proin sed libero enim sed faucibus turpis. Turpis
+              egestas maecenas pharetra convallis posuere morbi leo urna. Leo urna
+              molestie at elementum eu facilisis sed odio. Urna nec tincidunt
+              praesent semper. Eros in cursus turpis massa tincidunt dui. Velit
+              aliquet sagittis id consectetur purus. Elementum eu facilisis sed
+              odio morbi quis commodo. Ullamcorper velit sed ullamcorper morbi.
+            </p>
+          </div>
+        </div>
+        <div class="vc_empty_space" style="height: 8px">
+          <span class="vc_empty_space_inner"></span>
+        </div>
+        <div class="wpb_text_column wpb_content_element">
+          <div class="wpb_wrapper">
+            <p>
+              Sit amet venenatis urna cursus eget nunc scelerisque. Suspendisse
+              ultrices gravida dictum fusce ut placerat. At risus viverra
+              adipiscing at in tellus integer feugiat scelerisque. Sapien faucibus
+              et molestie ac. Commodo nulla facilisi nullam vehicula ipsum a arcu
+              cursus. At augue eget arcu dictum varius duis at consectetur. Urna
+              nec tincidunt praesent semper feugiat. Enim blandit volutpat
+              maecenas volutpat blandit aliquam etiam erat velit. Fringilla urna
+              porttitor rhoncus dolor purus non enim praesent elementum.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-3">
+        <div class="mkdf-ps-info-holder">
+          <div class="mkdf-ps-info-item mkdf-ps-custom-field">
+            <h6 class="mkdf-ps-info-title">Project:</h6>
+            <p>PetStore Branding</p>
+          </div>
+          <div class="mkdf-ps-info-item mkdf-ps-custom-field">
+            <h6 class="mkdf-ps-info-title">Client:</h6>
+            <p>
+              <a itemprop="url" href="https://qodeinteractive.com/">
+                Qode Interactive
+              </a>
+                    </p>
+            </div>
+            <div class="mkdf-ps-info-item mkdf-ps-date">
+                <h6 class="mkdf-ps-info-title">Date:</h6>
+                <p itemprop="dateCreated" class="mkdf-ps-info-date entry-date updated">
+                    July 15, 2019
+                </p>
+                <meta itemprop="interactionCount" content="UserComments: 0" />
+            </div>
+            <div class="mkdf-ps-info-item mkdf-ps-categories">
+                <h6 class="mkdf-ps-info-title">Category:</h6>
+                <a itemprop="url" class="mkdf-ps-info-category" href="https://pawfriends.qodeinteractive.com/portfolio-category/tips/">Tips</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-12 navigation row my-5">
+        <div class="col-2">
+          <a
+            href="https://pawfriends.qodeinteractive.com/portfolio-item/big-images/"
+            rel="prev"
+            ><span class="mkdf-ps-nav-mark">&lt;</span
+            ><span class="mkdf-ps-nav-label">Previous</span></a
+          >
+        </div>
+        <div class="col-8 d-flex justify-content-center">
+          <a
+            itemprop="url"
+            href="https://pawfriends.qodeinteractive.com/portfolio/"
+          >
+          <img src="../../../assets/image/halfimg.png"
+          alt="">
+          </a>
+            </div>
+            <div class="col-2 d-flex justify-content-end">
+                <a routerLink="/big-gallery" rel="next"><span class="">Next</span
+            ><span class="">&gt;</span></a
+          >
+        </div>
+      </div>
+    </div>
+  
+  </div>

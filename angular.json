@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mdb-angular-free",
+            "outputPath": "dist/mdb-angular-free/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -135,6 +135,65 @@
               "devServerTarget": "mdb-angular-free:serve:production"
             }
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/mdb-angular-free/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json",
+            "optimization": false,
+            "sourceMap": true,
+            "extractLicenses": false
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "sourceMap": false,
+              "extractLicenses": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "mdb-angular-free:build:development",
+              "serverTarget": "mdb-angular-free:server:development"
+            },
+            "production": {
+              "browserTarget": "mdb-angular-free:build:production",
+              "serverTarget": "mdb-angular-free:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "mdb-angular-free:build:production",
+              "serverTarget": "mdb-angular-free:server:production"
+            },
+            "development": {
+              "browserTarget": "mdb-angular-free:build:development",
+              "serverTarget": "mdb-angular-free:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
